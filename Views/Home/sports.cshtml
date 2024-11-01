@@ -1,0 +1,295 @@
+﻿<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #141E30, #243B55);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: #FFD700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 5px #000;
+        margin-bottom: 20px;
+        animation: glowing 1.5s infinite alternate;
+    }
+
+    .header-container {
+        text-align: center;
+    }
+
+    .yellow-border {
+        border: 3px solid yellow;
+        border-radius: 5px;
+    }
+
+    .card-text, .card-title {
+        color: gray;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    .btn-primary {
+        background-color: #FFD700;
+        color: #141E30;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 30px;
+        cursor: pointer;
+        font-size: 1.2em;
+        margin: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #FF6347;
+            transform: scale(1.1);
+        }
+
+    .carousel {
+        width: 90%;
+        max-width: 1200px;
+        overflow: hidden;
+        background-color: #141E30;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+        background: linear-gradient(135deg, #FFD700, #FF6347);
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+        .carousel-item h2, .carousel-item p, .carousel-item a {
+            color: white;
+        }
+
+        .carousel-item h2 {
+            font-size: 2em;
+            margin-top: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .carousel-item p {
+            font-size: 1.2em;
+        }
+
+        .carousel-item a {
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            .carousel-item a:hover {
+                color: #FFD700;
+            }
+
+    .carousel-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 1em;
+        color: #FFD700;
+        letter-spacing: 2px;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    .highlight h3 {
+        color: #007bff;
+        margin-top: 20px;
+    }
+
+    .highlight p {
+        font-size: 1.1rem;
+    }
+
+
+    .modal-button {
+        background-color: #FFD700;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .modal-button:hover {
+            background-color: #FF6347;
+        }
+
+
+    .modal-content {
+        color: #000000;
+    }
+
+</style>
+<h1 class="center-text">Latest Sports News</h1>
+<div class="header-container">
+    <h1>OUR Sports Hub</h1>
+    <h3>All the Latest Sports News from September & October 2024</h3>
+</div>
+<div class="bg-success text-white p-2 mb-3">
+    <marquee behavior="scroll" direction="left"> quick sports news </marquee>
+</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card yellow-border" style="width: 100%;">
+                <img class="card-img-top" src="https://th.bing.com/th?id=OIF.N7Lb2fOiWfQ8nUx%2fu%2byLZA&rs=1&pid=ImgDetMain" alt="Rodrigo Hernández Cascante">
+                <div class="card-body">
+                    <h4 class="card-title">Rodrigo Hernández Cascante</h4>
+                    <p class="card-text">Rodri wins his first Ballon d'Or in 2024</p>
+
+                    <div class="tags">
+                        <span class="badge bg-warning text-dark">Football</span>
+                        <span class="badge bg-warning text-dark">Ballon d'Or</span>
+                        <span class="badge bg-warning text-dark">Awards</span>
+                        <span class="badge bg-warning text-dark">Author=Adam</span>
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Read More
+                    </button>
+                </div>
+
+                
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Rodri wins Ballon D'Or</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Rodri, the talented midfielder from Manchester City and the Spanish national team, has been named the winner of the 2024 Ballon d'Or! This prestigious award, given to the best male football player in the world, was announced on October 28, 2024, at the Théâtre du Châtelet in Paris.
+
+                                Rodri's exceptional performance over the past year, including helping Manchester City win a record fourth consecutive Premier League title and being named the Player of the Tournament at UEFA EURO 2024, earned him this honor. He is the first Premier League player to win the Ballon d'Or since Cristiano Ronaldo in 2008.
+
+                                Rodri expressed his gratitude and humility, crediting his family and hard work for his success. He also mentioned that he is currently recovering from a knee injury and plans to come back stronger.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col-md-6">
+            <div class="card yellow-border" style="width: 100%;">
+                <img class="card-img-top" src="https://th.bing.com/th/id/R.fbfcad472ed7a5d4d4fe299af8206793?rik=lhJ26sb5nMsgvQ&pid=ImgRaw&r=0" alt="Stephen Curry">
+                <div class="card-body">
+                    <h4 class="card-title">Stephen Curry</h4>
+                    <p class="card-text">Golden State Warriors' star Stephen Curry is set to miss at least two games...</p>
+
+              
+                    <div class="tags">
+                        <span class="badge bg-warning text-dark">Basketball</span>
+                        <span class="badge bg-warning text-dark">NBA</span>
+                        <span class="badge bg-warning text-dark">Injury</span>
+                        <span class="badge bg-warning text-dark">Author=Adam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+        </button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://th.bing.com/th/id/R.7ca79ac9332b0462cd978dc37a4a094e?rik=3Abq2F6Deiz%2bgA&pid=ImgRaw&r=0" class="d-block w-100 carousel-image" alt="Futsal World Cup">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Futsal World Cup</h5>
+                <p>In September 2024, the Futsal World Cup started in Uzbekistan with 24 countries competing. The final will be on October 6, 2024.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.zUU47-B2hHby7WQpB3yAlQHaEK?rs=1&pid=ImgDetMain" class="d-block w-100 carousel-image" alt="EA FC 25 Release">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>EA FC 25 Release</h5>
+                <p>The latest release in the popular football video game series by Electronic Arts, EA SPORTS FC™ 25, was out in September 2024.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.58hFXdce8GowJ5tHYkT5tAHaEK?rs=1&pid=ImgDetMain" class="d-block w-100 carousel-image" alt="Sky Sports Red Card Controversy">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Sky Sports Red Card Controversy</h5>
+                <p>Sky Sports responded to claims of interference in the decision to red card William Saliba during Arsenal's Premier League defeat to Bournemouth.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.7KrKZVSb8Mms7Ktnt5B3lAHaIO?rs=1&pid=ImgDetMain" class="d-block w-100 carousel-image" alt="NBA Season Kickoff">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>NBA Season Kickoff</h5>
+                <p>The 2024-25 NBA season kicked off in October, bringing excitement and high expectations for fans worldwide.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+
+        </span>
+        <span class="visually-hidden"> Previous</span>
+
+    </button> <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+
+        </span>
+        <span class="visually-hidden"> Next</span>
+
+    </button>
+</div>
+
+
+
+<footer>
+    <p>&copy; 2024 Ultimate Sports Hub - Stay Drippy!</p>
+</footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>

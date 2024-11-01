@@ -1,0 +1,182 @@
+﻿<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+
+    .center-card {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .info-card {
+        transition: transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        height: 100%;
+    }
+
+        .info-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+    .more-text {
+        display: none;
+    }
+
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+        footer a {
+            color: #ddd;
+            margin: 0 10px;
+        }
+
+            footer a:hover {
+                color: #fff;
+            }
+</style>
+<section class="container py-5">
+    <h2 class="section-title">Discover More</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card center-card">
+                <img src="https://wallpapers.com/images/featured/solsystem-c688izfbh9p16x9z.jpg" widht="450" height="300">
+                <div class="card-body">
+                    <h2 class="card-title">Our mighty Solar system</h2>
+                    <p class="card-text">The biggest stuff in planet Earth are the smallest thing in our Universe</p>
+                    <button class="btn btn-light btn-lg" onclick="toggleText('moreText1', this)">Learn More</button>
+                    <span class="more-text" id="moreText1">
+                        <br /><br /><br /> <h3>Our Solar System</h3><br />
+                        The solar system is a vast and fascinating expanse of space that consists of the Sun and all the celestial bodies that are bound to it by gravity. It is located in the Milky Way galaxy, approximately 26,000 light-years from the galactic center.
+                        The Sun
+                        At the heart of our solar system lies the Sun, a nearly perfect sphere of hot plasma that provides the necessary light and heat to sustain life on Earth. It is a medium-sized star, classified as a G-type main-sequence star (G dwarf), and accounts for about 99.86% of the total mass of the solar system.
+
+                        The Planets
+                        There are eight major planets in our solar system, each with its unique characteristics:
+                        <br /><hr />
+
+                        Mercury: The closest planet to the Sun, Mercury is a small, rocky planet with a surface marked by craters. It has a very thin atmosphere and experiences extreme temperature fluctuations.
+                        <br /><hr />
+                        Venus: Often called Earth's "sister planet," Venus has a similar size and composition but a very thick, toxic atmosphere composed mainly of carbon dioxide, with surface temperatures hot enough to melt lead.
+                        <br /><hr />
+                        Earth: The third planet from the Sun, Earth is the only known planet to support life. Its diverse ecosystems and bodies of water are essential for sustaining life forms.
+                        <br /><hr />
+                        Mars: Known as the "Red Planet," Mars has a thin atmosphere and is home to the largest volcano and canyon in the solar system. It has been a focus of exploration due to evidence of past water and the potential for life.
+                        <br /><hr />
+                        Jupiter: The largest planet in our solar system, Jupiter is a gas giant known for its Great Red Spot, a massive storm larger than Earth. It has a strong magnetic field and dozens of moons, including the largest moon in the solar system, Ganymede.
+                        <br /><hr />
+                        Saturn: Famous for its stunning rings made of ice and rock particles, Saturn is another gas giant. It has a complex system of moons, including Titan, which has lakes of liquid methane and is of great interest for astrobiology.
+                        <br /><hr />
+                        Uranus: An ice giant with a blue hue due to methane in its atmosphere, Uranus has a unique tilt that causes extreme seasons. It has a faint ring system and 27 known moons.
+                        <br /><hr />
+                        Neptune: The farthest planet from the Sun, Neptune is known for its deep blue color and strong winds. It has a dynamic atmosphere with storms similar to those on Jupiter and is home to Triton, a large moon with geysers.
+                        <br /><hr />
+                        Dwarf Planets
+                        Beyond the eight major planets, our solar system also contains dwarf planets, including Pluto, Eris, Haumea, Makemake, and Ceres. These bodies share similar characteristics with the major planets but do not clear their orbits of other debris.
+                        <br /><hr />
+                        The Kuiper Belt and Oort Cloud
+                        The Kuiper Belt is a region beyond Neptune filled with icy bodies and dwarf planets. It extends from about 30 to 55 astronomical units (AU) from the Sun. Beyond the Kuiper Belt lies the Oort Cloud, a theoretical shell of icy objects that is believed to be the source of long-period comets.
+                        <br /><hr />
+                        Conclusion
+                        Our solar system is a complex and dynamic environment filled with a diverse array of celestial bodies. From the scorching surface of Mercury to the icy fringes of the Oort Cloud, each component plays a vital role in the cosmic tapestry of our universe. Ongoing exploration and study of our solar system continue to reveal its wonders and mysteries.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="row">
+
+
+                <div class="col-md-12 mb-4">
+                    <div class="card info-card">
+                        <img src="https://www.codaso.net/earthquakes/img/headers/site/1027814.png" class="card-img-top" alt="Card Image 1" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Latest earthquackes</h5>
+                            <p class="card-text">Magnitude 5.1 earthquake in Kuqa, China on October 26, 2024</p>
+                            <button class="btn btn-primary" onclick="toggleText('moreText2', this)">Learn More</button>
+                            <span class="more-text" id="moreText2"><br /><hr />On October 26, 2024, a 5.1-magnitude earthquake struck Kuqa City in the Aksu Prefecture of China's Xinjiang region at 4:35 p.m. local time. The quake occurred at a depth of around 10 kilometers, causing noticeable shaking but limited damage reports. Xinjiang, known for its seismic activity, frequently experiences tremors due to its position within tectonic boundaries.<br /> Local authorities closely monitored the situation to assess any structural impact or injuries in the affected areas​ </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 mb-4">
+                    <div class="card info-card">
+                        <img src="https://www.freightwaves.com/wp-content/uploads/2020/10/Super-Typhoon-Goni.jpg" class="card-img-top" alt="Card Image 2" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Tropical Storm Trami in the Philippines</h5>
+                            <p class="card-text">Tropical Storm Trami has caused landslides and significant damage in the lakeside town of Talisay, resulting in over 100 deaths and leaving thousands homeless.</p>
+                            <button class="btn btn-primary" onclick="toggleText('moreText3', this)">Learn More</button>
+                            <span class="more-text" id="moreText3"> <br /><hr />In late October 2024, Tropical Storm Kristine (internationally known as Trami) impacted the Philippines, bringing heavy rainfall and strong winds across Luzon and the Visayas.<br /> The storm intensified as it approached, prompting the Philippine weather agency PAGASA to issue tropical cyclone warnings in multiple regions. Widespread flooding, landslides, and strong winds caused significant disruption, affecting thousands of residents and resulting in evacuations.<br /> Despite PAGASA’s forecasts indicating Kristine would exit the Philippine area of responsibility by October 25, residual rain and gusty conditions remained concerns for many areas.</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 mb-4">
+                    <div class="card info-card">
+                        <img src="https://th.bing.com/th/id/OIP.0k-9mnXYVDZ27dXx_MZDvQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Card Image 3" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Stay Connected</h5>
+                            <p class="card-text">Find out more about how you can get involved and stay updated with our latest news.</p>
+                           </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <p>Only at IN (International News)</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function toggleText(moreTextId, button) {
+        const moreText = document.getElementById(moreTextId);
+        if (moreText.style.display === 'none' || moreText.style.display === '') {
+            moreText.style.display = 'inline';
+            button.textContent = 'Read Less';
+        } else {
+            moreText.style.display = 'none';
+            button.textContent = 'Learn More';
+        }
+    }
+</script>
+            </div>
+        </section>
+
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
